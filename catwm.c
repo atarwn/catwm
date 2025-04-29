@@ -646,7 +646,7 @@
                  break;
              case 1:
                  for(c=head;c;c=c->next) {
-                    XMoveResizeWindow(dis, c->win, 0, 0, sw, sh);
+                    XMoveResizeWindow(dis, c->win, 0, 0, sw - 2*BORDER_SIZE, sh - 2*BORDER_SIZE);
                  }
                  break;
              default:
